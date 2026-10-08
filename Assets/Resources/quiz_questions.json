@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "questionText": "What is the name of the state in which the Ram Mandir is situated?",
+      "optionA": "Bihar",
+      "optionB": "Uttar Pradesh",
+      "optionC": "Kerala",
+      "optionD": "Madhya Pradesh",
+      "correctAnswer": 1
+    },
+    {
+      "questionText": "In which city is the Ram Mandir located?",
+      "optionA": "Varanasi",
+      "optionB": "Lucknow",
+      "optionC": "Ayodhya",
+      "optionD": "Agra",
+      "correctAnswer": 2
+    },
+    {
+      "questionText": "Ram Mandir is believed to be built at the birthplace of which deity?",
+      "optionA": "Lord Krishna",
+      "optionB": "Lord Shiva",
+      "optionC": "Lord Rama",
+      "optionD": "Lord Vishnu",
+      "correctAnswer": 2
+    },
+    {
+      "questionText": "Which river flows near Ayodhya?",
+      "optionA": "Ganga",
+      "optionB": "Yamuna",
+      "optionC": "Saraswati",
+      "optionD": "Sarayu",
+      "correctAnswer": 3
+    },
+    {
+      "questionText": "What architectural style is predominantly used in the Ram Mandir's construction?",
+      "optionA": "Mughal style",
+      "optionB": "Nagara style",
+      "optionC": "Dravidian style",
+      "optionD": "Gothic style",
+      "correctAnswer": 1
+    },
+    {
+      "questionText": "The topmost point of a Hindu temple's spire is commonly called what?",
+      "optionA": "Minaret",
+      "optionB": "Shikhara",
+      "optionC": "Dome",
+      "optionD": "Steeple",
+      "correctAnswer": 1
+    },
+    {
+      "questionText": "Which material is primarily used in the main structure of the Ram Mandir?",
+      "optionA": "Marble only",
+      "optionB": "Red sandstone and marble",
+      "optionC": "Granite only",
+      "optionD": "Concrete and steel",
+      "correctAnswer": 1
+    },
+    {
+      "questionText": "Ayodhya is traditionally associated with which ancient Indian epic?",
+      "optionA": "Mahabharata",
+      "optionB": "Ramayana",
+      "optionC": "Puranas",
+      "optionD": "Vedas",
+      "correctAnswer": 1
+    },
+    {
+      "questionText": "Which direction does the main entrance of most traditional Nagara-style temples typically face?",
+      "optionA": "North",
+      "optionB": "South",
+      "optionC": "East",
+      "optionD": "West",
+      "correctAnswer": 2
+    },
+    {
+      "questionText": "What term describes the outer boundary wall commonly surrounding a Hindu temple complex?",
+      "optionA": "Prakara",
+      "optionB": "Mandapa",
+      "optionC": "Garbhagriha",
+      "optionD": "Vimana",
+      "correctAnswer": 0
+    }
+  ]
+}

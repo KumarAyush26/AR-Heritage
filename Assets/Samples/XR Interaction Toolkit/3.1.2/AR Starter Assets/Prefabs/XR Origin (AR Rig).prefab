@@ -111,6 +111,7 @@ MonoBehaviour:
   m_FocusMode: -1
   m_LightEstimationMode: -1
   m_AutoFocus: 1
+  m_ImageStabilization: 0
   m_LightEstimation: 0
   m_FacingDirection: 1
   m_RenderMode: 0
@@ -254,8 +255,6 @@ GameObject:
   - component: {fileID: 2512387470528047736}
   - component: {fileID: 2512387470528047737}
   - component: {fileID: 2512387470528047718}
-  - component: {fileID: 5058995641167854413}
-  - component: {fileID: 3964924927681603271}
   - component: {fileID: 8211914862182117872}
   - component: {fileID: 6840559204360192928}
   m_Layer: 0
@@ -324,6 +323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
   m_PlanePrefab: {fileID: 1585201990951412, guid: a6b7ca1d53c75490595d1f0d5f43be38, type: 3}
   m_DetectionMode: -1
 --- !u!114 &2512387470528047718
@@ -338,38 +340,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
   m_RaycastPrefab: {fileID: 0}
---- !u!114 &5058995641167854413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2512387470528047719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c56409d1eb2456c4d9d0f0bdf6980056, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  placedPrefab: {fileID: 1522460773579601886, guid: 7b1979d0076c9d04c8caa98e090deb04, type: 3}
-  instructionText: {fileID: 0}
-  infoButton: {fileID: 0}
-  resetButton: {fileID: 0}
-  infoPanelController: {fileID: 0}
-  audioController: {fileID: 0}
-  planeManager: {fileID: 2512387470528047737}
---- !u!114 &3964924927681603271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2512387470528047719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfcaa2d9326c74c4d995f0e179420583, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8211914862182117872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +356,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728ad7fae8e460a4ba41265c7308d757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
   m_AnchorPrefab: {fileID: 0}
 --- !u!114 &6840559204360192928
 MonoBehaviour:
@@ -398,6 +375,7 @@ MonoBehaviour:
   placedPrefab: {fileID: 1522460773579601886, guid: 7b1979d0076c9d04c8caa98e090deb04, type: 3}
   arCamera: {fileID: 0}
   placementDistance: 1.5
+  anchorManager: {fileID: 0}
   instructionText: {fileID: 0}
   infoButton: {fileID: 0}
   resetButton: {fileID: 0}

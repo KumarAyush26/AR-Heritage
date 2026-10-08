@@ -5,6 +5,13 @@ using TMPro;
 
 public class QuizManager : MonoBehaviour
 {
+
+    [System.Serializable]
+    public class QuestionData
+    {
+        public Question[] questions;
+    }
+
     [System.Serializable]
     public class Question
     {
@@ -40,6 +47,8 @@ public class QuizManager : MonoBehaviour
 
     private void Start()
     {
+        LoadQuestionsFromJSON();
+
         if (questions == null || questions.Length == 0)
         {
             Debug.LogError("QuizManager: No questions have been added.");
@@ -54,6 +63,33 @@ public class QuizManager : MonoBehaviour
 
         SetupButtonListeners();
         ShowQuestion();
+    }
+
+    private void LoadQuestionsFromJSON()
+    {
+        TextAsset jsonFile = Resources.Load<TextAsset>("quiz_questions");
+
+        if (jsonFile == null)
+        {
+            Debug.LogError("QuizManager: quiz_questions.json not found in Resources folder.");
+            return;
+        }
+
+        QuestionData data = JsonUtility.FromJson<QuestionData>(jsonFile.text);
+        questions = data.questions;
+
+        ShuffleQuestions();
+    }
+
+    private void ShuffleQuestions()
+    {
+        if (questions == null) return;
+
+        for (int i = questions.Length - 1; i > 0; i--)
+        {
+            int randomIndex = Random.Range(0, i + 1);
+            (questions[i], questions[randomIndex]) = (questions[randomIndex], questions[i]);
+        }
     }
 
     private void SetupButtonListeners()
